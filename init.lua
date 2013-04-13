@@ -16,7 +16,7 @@ minetest.register_ore({
 	height_min     = -31000,
 	height_max     = 64,
 })
-minetest.register_craftitem("xytest:xyxhorium", {
+minetest.register_craftitem("xytest:xychorium", {
 	description = "Xychorium",
 	inventory_image = "xytest_xychorium.png",
 })
