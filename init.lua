@@ -60,12 +60,12 @@ for _, row in ipairs(xytest.dyes) do
 	minetest.register_node("xytest:xychorium_brick_"..name, {
 		description = desc.." Xychorium Brick",
 		tiles = {"xytest_brick_"..name..".png"},
-		groups = {snappy=2,choppy=2,oddly_breakable_by_hand=3,flammable=3,wool=1},
+		{cracky=3}
 	})
 	if craft_color_group then
 		minetest.register_craft({
 			type = "shapeless",
-			output = 'xytest:brick_'..name..' 1',
+			output = 'xytest:xychorium_brick_'..name..' 1',
 			recipe = {'group:dye,'..craft_color_group, 'xytest:xychorium_brick_white'},
 		})
 	end
