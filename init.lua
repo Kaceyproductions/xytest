@@ -27,3 +27,10 @@ minetest.register_node("xytest:xychorium_brick_basic", {
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
+minetest.register_craft({
+	output = 'xytest:xychorium_brick_basic 4',
+	recipe = {
+		{'xytest:xychorium', 'xytest:xychorium'},
+		{'xytest:xychorium', 'xytest:xychorium'},
+	}
+})
