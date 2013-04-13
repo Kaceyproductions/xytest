@@ -1,6 +1,6 @@
-minetest.register_node("xytest:stone_with_ore", {
+minetest.register_node("xytest:stone_with_xychorium", {
 	description = "Xychorium Ore",
-	tiles = {"default_stone.png^xytest_ore.png"},
+	tiles = {"default_stone.png^xytest_xychorium.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
 	drop = 'xytest:xychorium',
@@ -8,7 +8,7 @@ minetest.register_node("xytest:stone_with_ore", {
 })
 minetest.register_ore({
 	ore_type       = "scatter",
-	ore            = "xytest:stone_with_ore",
+	ore            = "xytest:stone_with_xychorium",
 	wherein        = "default:stone",
 	clust_scarcity = 8*8*8,
 	clust_num_ores = 8,
@@ -77,3 +77,6 @@ for _, row in ipairs(xytest.dyes) do
 		})
 		end
 end
+dofile(minetest.get_modpath("xytest").."/craft.lua")
+dofile(minetest.get_modpath("xytest").."/dye.lua")
+dofile(minetest.get_modpath("xytest").."/xychoridite.lua")
