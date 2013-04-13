@@ -1,6 +1,6 @@
 minetest.register_node("xytest:stone_with_xychoridite", {
 	description = "Xychorium Ore",
-	tiles = {"default_stone.png^xytest_xychoridite.png"},
+	tiles = {"default_stone.png^xytest_mineral_xychoridite.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
 	drop = 'xytest:xychoridite',
