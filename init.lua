@@ -69,9 +69,11 @@ for _, row in ipairs(xytest.dyes) do
 			recipe = {'group:dye,'..craft_color_group, 'xytest:xychorium_brick_white'},
 		})
 		end
-end
-minetest.register_craft({
+	if craft_color_group then
+		minetest.register_craft({
 			type = "shapeless",
 			output = 'xytest:xychorium_brick_white 1',
 			recipe = {'dye:white', 'xytest:xychorium_brick_'..name},
 		})
+		end
+end
