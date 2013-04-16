@@ -60,7 +60,7 @@ for _, row in ipairs(xytest.dyes) do
 	minetest.register_node("xytest:xychorium_brick_"..name, {
 		description = desc.." Xychorium Brick",
 		tiles = {"xytest_brick_"..name..".png"},
-		{cracky=3}
+		groups = {cracky=3}
 	})
 	if craft_color_group then
 		minetest.register_craft({
